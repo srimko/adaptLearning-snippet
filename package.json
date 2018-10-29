@@ -1,0 +1,21 @@
+{
+    "name": "adaptsnippet",
+    "displayName": "adaptSnippet",
+    "description": "Simple snippet for Adapt Learning framework",
+    "version": "0.0.1",
+    "publisher": "Srimko",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "json",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

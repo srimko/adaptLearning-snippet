@@ -1,0 +1,20 @@
+{
+  "adapt-contrib-text": {
+    "prefix": "c-text",
+    "body": [
+      "{",
+      "\t\"_id\": \"$1\",",
+      "\t\"_parentId\": \"$2\",",
+      "\t\"_type\": \"component\",",
+      "\t\"_component\": \"text\",",
+      "\t\"_classes\": \"\",",
+      "\t\"_layout\": \"${3:|left,full,right|}\",",
+      "\t\"title\": \"${4:Our first look at a component}\",",
+      "\t\"displayTitle\": \"${4:Our first look at a component}\",",
+      "\t\"body\": \"$5\",",
+      "\t\"instruction\": \"\"",
+      "}"
+    ],
+    "description": "Snippet for contib-text"
+  }
+}
