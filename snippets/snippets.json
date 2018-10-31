@@ -16,5 +16,137 @@
       "}"
     ],
     "description": "Snippet for contib-text"
+  },
+  "adapt-contrib-graphic": {
+    "prefix": "c-graphic",
+    "body": [
+    "{",
+    "\t\"_id\": \"$1\",",
+    "\t\"_parentId\": \"$2\",",
+    "\t\"_type\": \"component\",",
+    "\t\"_component\": \"graphic\",",
+    "\t\"_classes\": \"\",",
+    "\t\"_layout\": \"${3:|left,full,right|}\",",
+    "\t\"title\": \"${4:Here is a graphic object}\",",
+    "\t\"displayTitl\": \"${4:Here is a graphic object}\",",
+    "\t\"body\": \"$5\",",
+    "\t\"instruction\": \"\",",
+    "\t\"_graphic\": {",
+    "\t\t\"alt\": \"alt text\",",
+    "\t\t\"large\": \"$6\",",
+    "\t\t\"small\": \"$7\",",
+    "\t\t\"attribution\": \"$8\"",
+    "\t}",
+    "}"
+    ],
+    "description": "Snippet for contib-graphic"
+  },
+  "adapt-contrib-blank": {
+    "prefix": "c-blank",
+    "body": [
+    "{",
+    "\t\"_id\": \"$1\",",
+    "\t\"_parentId\": \"$2\",",
+    "\t\"_type\": \"component\",",
+    "\t\"_component\": \"blank\",",
+    "\t\"_classes\": \"\",",
+    "}"
+    ],
+    "description": "Snippet for contib-graphic"
+  },
+  "adapt-contrib-accordion": {
+    "prefix": "c-accordion",
+    "body": [
+    "{",
+    "\t\"_id\": \"$1\",",
+    "\t\"_parentId\": \"$2\",",
+    "\t\"_type\": \"component\",",
+    "\t\"_component\": \"accordion\",",
+    "\t\"_classes\": \"\",",
+    "\t\"_layout\": \"${3:|left,full,right|}\",",
+    "\t\"title\": \"${4:Accordion}\",",
+    "\t\"displayTitle\": \"${4:Accordion}\",",
+    "\t\"body\": \"$5\",",
+    "\t\"instruction\": \"\",",
+    "\t\"_items\": [",
+    "\t\t{",
+    "\t\t\t\"title\": \"Heading 1\",",
+    "\t\t\t\"body\": \"This is display text 1.\",",
+    "\t\t\t\"_graphic\": {",
+    "\t\t\t\t\"src\": \"course/en/images/example.jpg\",",
+    "\t\t\t\t\"alt\": \"accordion item 1 graphic alt text here.\",",
+    "\t\t\t\t\"attribution\": \"Copyright © 2015\"",
+    "\t\t\t},",
+    "\t\t\t\"_classes\": \"\"",
+    "\t\t}",
+    "\t]",
+    "}"
+    ],
+    "description": "Snippet for contib-accordion"
+  },
+  "adapt-contrib-accordion-item": {
+    "prefix": "c-accordion-item",
+    "body": [
+    "{",
+    "\t\"title\": \"$1\",",
+    "\t\"body\": \"$2\",",
+    "\t\"_graphic\": {",
+    "\t\t\"src\": \"$3\",",
+    "\t\t\"alt\": \"$4\",",
+    "\t\t\"attribution\": \"$5\"",
+    "\t},",
+    "\t\"_classes\": \"\"",
+    "}"
+    ],
+    "description": "Snippet for contib-accordion-item"
+  },
+  "adapt-contrib-narrative": {
+    "prefix": "c-narrative",
+    "body": [
+    "{",
+    "\t\"_id\": \"$1\",",
+    "\t\"_parentId\": \"$2\",",
+    "\t\"_classes\": \"\",",
+    "\t\"_type\": \"component\",",
+    "\t\"_layout\": \"${3:|left,full,right|}\",",
+    "\t\"_component\": \"narrative\",",
+    "\t\"title\": \"${4:Narrative}\",",
+    "\t\"displayTitle\": \"${4:Accordion}\",",
+    "\t\"body\": \"$5\",",
+    "\t\"instruction\": \"\",",
+    "\t\"_hasNavigationInTextArea\": ${6:|false, true|},",
+    "\t\"mobileInstruction\": \"This is optional instruction text that will be shown when viewed on mobile.\",",
+    "\t\"_setCompletionOn\": \"allItems\",",
+    "\t\"_items\": [",
+    "\t\t{",
+    "\t\t\"title\": \"Narrative stage 1 title\",",
+    "\t\t\"body\": \"This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.\",",
+    "\t\t\t\"_graphic\": {",
+    "\t\t\t\t\"src\": \"course/en/images/image-slider-1.jpg\",",
+    "\t\t\t\t\"alt\": \"First graphic\",",
+    "\t\t\t\t\"attribution\": \"Copyright © 2015\",",
+    "\t\t}",
+    "\t\t\"strapline\": \"Here is the first...\",",
+    "\t\t},",
+    "\t]",
+    "}"
+    ],
+    "description": "Snippet for contib-narrative"
+  },
+  "adapt-contrib-narrative-item": {
+    "prefix": "c-narrative",
+    "body": [
+    "{",
+    "\t\"title\": \"Narrative stage 1 title\",",
+    "\t\"body\": \"This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.\",",
+    "\t\t\"_graphic\": {",
+    "\t\t\t\"src\": \"course/en/images/image-slider-1.jpg\",",
+    "\t\t\t\"alt\": \"First graphic\",",
+    "\t\t\t\"attribution\": \"Copyright © 2015\",",
+    "\t\t}",
+    "\t\"strapline\": \"Here is the first...\",",
+    "},"
+    ],
+    "description": "Snippet for contib-narrative"
   }
 }
