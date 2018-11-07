@@ -134,7 +134,7 @@
     "description": "Snippet for contib-narrative"
   },
   "adapt-contrib-narrative-item": {
-    "prefix": "c-narrative",
+    "prefix": "c-narrative-item",
     "body": [
     "{",
     "\t\"title\": \"Narrative stage 1 title\",",
