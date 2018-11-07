@@ -10,8 +10,6 @@ This is the README for your extension "adaptsnippet".
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 0.0.1
 
 -----------------------------------------------------------------------------------------------------------
