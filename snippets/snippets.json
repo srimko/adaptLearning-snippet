@@ -148,5 +148,61 @@
     "},"
     ],
     "description": "Snippet for contib-narrative-item"
+  },
+  "adapt-contrib-mcq": {
+    "prefix": "c-mcq",
+    "body": [
+    "{",
+    "\t\"_id\": \"$1\",",
+    "\t\"_parentId\": \"$2\",",
+    "\t\"_classes\": \"\",",
+    "\t\"_type\": \"component\",",
+    "\t\"_layout\": \"${3:|left,full,right|}\",",
+    "\t\"component\": \"mcq\",",
+    "\t\"attempts\": $4,",
+    "\t\"shouldDisplayAttempts\": false,",
+    "\t\"questionWeight\": 1,",
+    "\t\"isRandom\": false,",
+    "\t\"selectable\": 1,",
+    "\t\"canShowModelAnswer\": true,",
+    "\t\"canShowFeedback\": true,",
+    "\t\"canShowMarking\": true,",
+    "\t\"recordInteraction\": true,",
+    "\t\"title\": \"MCQ\",",
+    "\t\"displayTitle\": \"MCQ\",",
+    "\t\"body\": \"Which of the following options would you consider to be correct?\",",
+    "\t\"instruction\": \"\",",
+    "\t\"_items\": [",
+    "\t\t{",
+    "\t\t\t\"text\": \"This is option 1.\",",
+    "\t\t\t\"_shouldBeSelected\": true",
+    "\t\t}",
+    "\t],",
+    "\t\"_feedback\": {",
+    "\t\t\"title\": \"Feedback\",",
+    "\t\t\"correct\": \"Congratulations, this is the correct feedback.\",",
+    "\t\t\"_incorrect\": {",
+    "\t\t\t\"notFinal\": \"\",",
+    "\t\t\t\"final\": \"This feedback will appear if you answered the question incorrectly.\",",
+    "\t\t},",
+    "\t\t\"_partlyCorrect\": {",
+    "\t\t\t\"notFinal\": \"\",",
+    "\t\t\t\"final\": \"This feedback will appear if you answered the question correctly.\"",
+    "\t\t}",
+    "\t}",
+    "}"
+    ],
+    "description": "Snippet for contib-mcq"
+  },
+  "adapt-contrib-mcq-item": {
+    "prefix": "c-mcq-item",
+    "body": [
+      "\t\t{",
+      "\t\t\t\"text\": \"$1.\",",
+      "\t\t\t\"_shouldBeSelected\": $2",
+      "\t\t}",
+      "\t],"
+    ],
+    "description": "Snippet for contib-mcq-item"
   }
 }
